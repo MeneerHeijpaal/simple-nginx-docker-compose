@@ -3,9 +3,9 @@
 This is a simple (*HTTP!!*) nginx deployment with docker-compose. It will serve all the files in the `/data` directory.
 
 If a file is not found, the server will default to *index.html*.
-This can be changed in **/nginx/site/site.conf**
+This can be changed in '/nginx/site/site.conf'
 
-Only GET-requests are allowed, this can also be changed in **/nginx/site/site.conf**
+Only GET-requests are allowed, this can also be changed in '/nginx/site/site.conf'
 
 You can set the source and target directories in the `docker-compose.yml`.
 ```yml
