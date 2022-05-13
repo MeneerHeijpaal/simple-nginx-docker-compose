@@ -4,7 +4,7 @@ This is a simple (*HTTP!!*) nginx deployment with docker-compose. It will serve 
 
 ## Some explanation
 If a file is not found, the server will default to *index.html*.
-This can be changed in `/nginx/site/site.conf'
+This can be changed in `/nginx/site/site.conf`
 
 Only GET-requests are allowed, this can also be changed in `/nginx/site/site.conf`
 
