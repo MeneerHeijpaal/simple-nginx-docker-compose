@@ -2,11 +2,13 @@
 
 This is a simple (*HTTP!!*) nginx deployment with docker-compose. It will serve all the files in the `/data` directory.
 
+###### Some explanation
 If a file is not found, the server will default to *index.html*.
-This can be changed in '/nginx/site/site.conf'
+This can be changed in `/nginx/site/site.conf'
 
-Only GET-requests are allowed, this can also be changed in '/nginx/site/site.conf'
+Only GET-requests are allowed, this can also be changed in `/nginx/site/site.conf`
 
+###### Deployment
 You can set the source and target directories in the `docker-compose.yml`.
 ```yml
 version: '3'
@@ -28,7 +30,7 @@ Then build and run it in the folder were the `docker-compose.yml` file is locate
     Creating network "docker_default" with the default driver
     Creating nginx1.16 ... done
 
-
+###### Interact with Docker
 You can interact with the Docker image via this command:
 
     $ docker exec -it nginx1.16 /bin/sh
